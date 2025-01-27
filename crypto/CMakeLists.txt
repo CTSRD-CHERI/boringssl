@@ -346,3 +346,5 @@ endif()
 if(USE_CUSTOM_LIBCXX)
   target_link_libraries(crypto libcxx)
 endif()
+
+SET_TARGET_PROPERTIES(crypto PROPERTIES SOVERSION 1)
